@@ -5,7 +5,7 @@
 	"description": "Migrating settings written in TypeScript to DynamoDB",
 	"main": "build/index.js",
 	"scripts": {
-		"start": "build/index.js",
+		"start": "node build/index.js",
 		"build": "tsc -p ./",
 		"lint": "tslint --fix -p ./",
 		"format": "prettier --write '**/*.{json,md}'"
@@ -24,10 +24,13 @@
 		"aws-sdk": "^2.377.0",
 		"dev-distribution": "^0.1.1",
 		"dotenv": "^6.2.0",
+		"lodash": "^4.17.11",
+		"promise-parallel-throttle": "^3.2.0",
 		"request-promise": "^4.2.2"
 	},
 	"devDependencies": {
 		"@types/dotenv": "^6.1.0",
+		"@types/lodash": "^4.14.119",
 		"@types/node": "^10.12.15",
 		"@types/request-promise": "^4.1.42",
 		"prettier": "^1.15.3",
