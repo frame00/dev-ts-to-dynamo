@@ -2,8 +2,9 @@
 	"name": "dev-ts-to-dynamo",
 	"version": "1.0.0",
 	"description": "Migrating settings written in TypeScript to DynamoDB",
-	"main": "index.js",
+	"main": "build/index.js",
 	"scripts": {
+		"start": "build/index.js",
 		"build": "tsc -p ./",
 		"lint": "tslint --fix -p ./",
 		"format": "prettier --write '**/*.{json,md}'"
